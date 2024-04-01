@@ -11,3 +11,19 @@ Route::get('/user', function (Request $request) {
 Route::get('/students', function(){
     return 'Students List';
 });
+
+Route::get('/student/{id}', function(){
+    return 'Get a student';
+});
+
+Route::post('/create-student', function(){
+    return 'Create Student';
+});
+
+Route::put('/update-student/{id}', function(){
+    return 'Updating Student';
+});
+
+Route::delete('/delete-student/{id}', function(){
+    return 'Deleting Student';
+});
